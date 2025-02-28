@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1><b>Bài Tập</b></h1>
+  <ul>
+    <li>Trang chủ</li>
+    <li>Giới thiệu</li>
+    <ul type="circle">
+      <li>Lịch sử phát triển</li>
+      <li>Hệ thống chi nhánh</li>
+      <li>Hình thức thanh toán</li>
+    </ul>
+  </ul>
+  <ul><li>Liên hệ</li>
+  <li>Góp ý</li>
+  <li>Danh sách sản phẩm</li>
+  <li>Giỏ hàng</li>
+  <li>Đăng nhập</li>
+  <li>Đăng ký</li></ul>
+</body>
+<body>
+  <ol>
+    <li><b>Quá trình hình thành</b></li>
+    <ul type ="square">
+      <li>Từ tháng 01/2012 đến 03/2012:Quá trình hoàn thiện hệ thống cửa hàng</li>
+      <li> Tháng 03/2012: Chính thức khai trương website</li>
+    </ul>
+  </ol>
+  <ol>
+    <li><b>Đội ngũ nhân sự</b></li>
+    <ul type="square">
+<li>Phòng kiểm soát nội bộ</li>
+<li>Khối tài chính</li>
+<li>Khối hành chính nhân sự</li>
+    </ul>
+  </ol>
+</body>
+<body>
+  <H1>THIẾT KẾ BỐ CỤC TRANG WEB BẰNG THẺ TABLE </H1>
+  <TABLE border="1" BORDER CELLSPACING="0" width="100%">
+      <tr BGCOLOR="#FFCC99">
+          <th HEIGHT ="70PX" colspan="8">HEADER</th>
+      </tr>
+      <TR BGCOLOR="#99CCFF">
+          <th colspan="8">MENU NGANG</th>
+      </TR>
+      <TR>
+          <th bgcolor="#CCFFCC" rowspan="2">SIDEBAR</th>
+          <TH bgcolor="#FFCCC" HEIGHT="150PX" colspan="6">SLIDER</TH>
+      </TR>
+      <TR BGCOLOR="#9999cc">
+          <th WIDTH="300PX" HEIGHT="200PX" colspan="3">SẢN PHẨM NỔI BẬT 1</th>
+          <th WIDTH="300PX" colspan="3">SẢN PHẨM NỔI BẬT 2</th>
+      </TR>
+      <TR HEIGHT="90PX">
+          <TH BGCOLOR="#FFCC99">THÔNG TIN CÔNG TY</TH>
+          <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 1</TH>
+          <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 2</TH>
+          <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 3</TH>
+      </TR>
+  </TABLE>
+</body>
+<body>
+  <h1>PHIẾU KHẢO SÁT</h1>
+  <form action="#" method="post">
+  <table border ="1" width="100%" style="text-align: left;" >
+      <tr>
+          
+             <th><label for="Họ tên">Họ tên</label></th> 
+              <td><input type="text" name="" id="Họ tên"></td>      
+      </tr>
+     <tr>
+      <th><label for="Màu yêu thích">Màu yêu thích</label></th>
+      <td><input type="color" name="" id="Màu yêu thích"></td>
+     </tr>
+     <tr>
+     <th><label for="Ngày sinh">Ngày sinh</label></th>
+     <td><input type="date" name="" id="Ngày sinh"></td>
+  </tr>
+  <tr>
+      <th><label for="Email">Email</label></th>
+      <td><input type="email" name="" id="Email"></td>
+  </tr>
+  <tr>
+      <th><label for="Ngành nghề">Ngành nghề</label></th>
+      <td><input type="text" name="" id="Ngành nghề"></td>
+  </tr>
+  <tr>
+      <th><label for="Website">Website</label></th>
+      <td><input type="url" name="" id="Website"></td>
+  </tr>
+  <tr height="60px">
+      <th><label  for="số">Con số yêu thích(1-9) </label></th>
+      <td><input min="1" max="9" type="number" name="" id="số"></td>
+  </tr>
+  <tr>
+      <th><label for="thu_nhap">Thu nhập</label></th>
+               <td>  100(USD) <input type="range" id="thu_nhap" name="thu_nhap" min="100" max="1000" step="10" oninput="updateValue()"> 1000(USD)
+                  <br>
+                  Tỉ giá <input type="number" id="exchange_rate" value="22500" readonly> = 
+                  <input type="number" id="thu_nhap_value" readonly>
+
+                  <script>
+                  function updateValue() {
+                  let income = document.getElementById("thu_nhap").value;
+                  let rate = document.getElementById("exchange_rate").value;
+                  document.getElementById("thu_nhap_value").value = income * rate;
+                  }
+                  </script>
+               </td>
+      </tr>
+  <tr>
+      <td></td>
+      <td><input type="submit" name="" value="Gửi đi"><input type="reset" name="" value="Xóa hết"> </td>
+  </tr>
+  </table>
+  
+</form>
+</body>
+</html>
